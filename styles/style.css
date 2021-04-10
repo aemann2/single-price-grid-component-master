@@ -1,3 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  background: #e5eff5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 500px);
+      grid-template-columns: minmax(300px, 500px);
+  text-align: left;
+  margin: 4rem 2rem;
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.join {
+  background: white;
+  color: #98a6bd;
+}
+
+.join__header {
+  color: #2ab2af;
+}
+
+.join__subhead {
+  font-size: 1rem;
+  color: #c0df34;
+}
+
+.monthly,
+.why {
+  color: #e5eff5;
+  width: 100%;
+}
+
+.monthly {
+  background: #2ab2af;
+}
+
+.monthly__button {
+  background: #c0df34;
+  border: none;
+  color: #e5eff5;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.why {
+  background: #4ac6bd;
+}
+
+.why__list {
+  list-style: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
