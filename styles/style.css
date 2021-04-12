@@ -44,6 +44,9 @@ body {
       grid-template-columns: minmax(300px, 500px);
   text-align: left;
   margin: 4rem 2rem;
+  -webkit-box-shadow: 12px 15px 27px -5px rgba(0, 0, 0, 0.22);
+  box-shadow: 12px 15px 27px -5px rgba(0, 0, 0, 0.22);
+  border-radius: 8px;
 }
 
 .header {
@@ -128,5 +131,34 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-cards {
+    -ms-grid-columns: (350px)[2];
+        grid-template-columns: repeat(2, 350px);
+  }
+  .card {
+    padding: 2rem 2.5rem;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .join {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    border-radius: 8px 8px 0 0;
+  }
+  .join__body {
+    font-size: 1.1rem;
+  }
+  .monthly {
+    border-radius: 0 0 0 8px;
+  }
+  .why {
+    border-radius: 0 0 8px 0;
+    line-height: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
