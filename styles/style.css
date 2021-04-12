@@ -47,16 +47,17 @@ body {
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .card {
-  padding: 1rem;
+  padding: 1rem 1.3rem;
 }
 
 .join {
   background: white;
   color: #98a6bd;
+  border-radius: 8px 8px 0 0;
 }
 
 .join__header {
@@ -66,6 +67,17 @@ body {
 .join__subhead {
   font-size: 1rem;
   color: #c0df34;
+}
+
+.join__body {
+  font-size: 0.9rem;
+  line-height: 2em;
+}
+
+.join > *,
+.monthly > *,
+.why > * {
+  margin: 1rem 0;
 }
 
 .monthly,
@@ -78,6 +90,17 @@ body {
   background: #2ab2af;
 }
 
+.monthly__price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.monthly--super {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(229, 239, 245, 0.8);
+}
+
 .monthly__button {
   background: #c0df34;
   border: none;
@@ -85,18 +108,21 @@ body {
   font-size: 1rem;
   padding: 1rem;
   border-radius: 10px;
+  width: 100%;
 }
 
 .why {
   background: #4ac6bd;
+  border-radius: 0 0 8px 8px;
 }
 
 .why__list {
   list-style: none;
+  color: rgba(229, 239, 245, 0.8);
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
 }
 
